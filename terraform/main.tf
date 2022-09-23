@@ -8,10 +8,7 @@ terraform {
 
 }
 
-provider "aws" {
-  version = "~>3.0"
-  region  = "east-us-1"
-}
+
 
 resource "aws_s3_bucket" "s3Bucket" {
      bucket = "fm-terratest2"
