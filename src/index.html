@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<!--<div id="header">-->
+  
+<!--</div>-->
+
+<!--<style>
+* {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/*body {
+    min-width: 500px;
+}*/
+
+div {
+  border-radius: 5px;
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #13617d;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #13617d;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+}
+
+p,
+li {
+  font-family: 'Arial';
+}
+
+.head {
+  font-size: 20px;
+}
+
+#name {
+  font-family: 'Arial';
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+.top {
+  font-family: 'Arial';
+  
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+</style>-->
+
+<div id="header"></div>
+
+<div class="left"></div>
+<div class="stuff" >
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <div class="top"style="text-align:center">
+  <br><br>
+  <h1>Resume</h1>
+    <br>
+  <h2>Fabio Master</h2>
+    
+  <hr />
+    <br>
+  <div> website:fabiomaster.com Email: fabio.master.job@gmail.uk</div>
+    </div>
+  <hr />
+  <div style="text-align:center" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="89cc464f-6401-443b-9d47-c8dc3817ed1e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <br>
+  <hr />
+  <br>
+  <p class="head">Personal Profile</p>
+  <p>I am a Computer Science graduate and Web Accessibility Consultant with experience in working with Fortune 500 clients and delivering ad hoc solutions. Skilled in Multi-tasking, I used time management capabilities to meet assignment deadlines for my University and professional projects. My strengths include my solid technical skills, communication skills and varied teamwork experience. I am keen to be put in challenging positions where I can showcase my array of abilities and knowledge.</p>
+  <br>
+  <p class="head">Interests</p>
+  <ul>
+    <li>Team sports</li>
+    <li>Piano</li>
+    <li>Design</li>
+    <li>Programming</li>
+    <li>Computer Science</li>
+  </ul>
+  <br>
+  <p class="head">Certifications</p>
+   <ul>
+    <li>AWS Cloud Practitioner</li>
+    <li>IAAP CPACC </li>
+    
+  </ul>
+  <br>
+  <p class="head">Skills</p>
+  <ul>
+    <li>Web Design with HTML & CSS</li>
+    <li>AWS platform</li>
+    <li>Python</li>
+    <li>Java</li>
+  </ul>
+  <br>
+  <p class="head">Education</p>
+  <ul>
+    
+    <li>City University of London - BSc Computer Science</li>
+      <li>ITIS Alber Einstein Liceo Scienze Applicate - Diploma</li>
+    
+  </ul>
+  <br>
+  <p class="head">Experience</p>
+  <ul>
+    <li>Accesibility and Usability Consultant - AbilityNet</li>
+    <li>Web Developer - AY Recruitment</li>
+    <li>Bartender - Britannia Hotels</li>
+  </ul>
+  <br>
+  <p class="head">Projects</p>
+  <ul>
+    <li>Cloud Resume Challenge</li>
+      <p>A website resume hosted on AWS services (S3, Route 53, CloudFront) with a counter that gets updated at every visit (DynamoDB, API Getaway, Lambda Functions). The function is written in Python. Terraform has been used to setup the project.</p>
+    <li>Individual Work Based Project</li>
+      <p>We had to make a individual project and I decided to make an Android VR game. It was supposed to be related to the field where we were working on, so I made it so that it would replicate some visual impairments, so that people can understand first hand the impact that these conditions have on people and the importance of accessibility. The language used was C# and the Unity engine </p>
+  </ul>
+  <!--<div class="counter_text">
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>You are visitor:</h1>
+    <div id="counter">
+</div>-->
+  <br>
+  <script type="text/javascript">
+    fetch('https://hla1k5pi84.execute-api.us-east-1.amazonaws.com/test4/testhead')
+    .then(response => response.json())
+    .then((data) => {
+                document.getElementById("counter").innerText = data.body.count
+            })
+
+  </script>
+  <p>You are visitor:</p><div id="counter"></div>
+</div>
+</div>
+<div class="right" ></div>
+<div id="footer">
+  <h2 id="name">by Fabio</h2></div>
+
+
+
+
+
+
+</html>
