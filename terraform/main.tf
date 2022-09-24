@@ -1,5 +1,13 @@
 terraform {
-   
+    required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~>3.27"
+    }
+  }
+
+
+
    backend "s3" {
        bucket = "fm-terratest2"
        key    = "terraform-state/"
