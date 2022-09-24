@@ -3,7 +3,7 @@ terraform {
    backend "s3" {
        bucket = "fm-terratest2"
        key    = "terraform-state/"
-       region = "east-us-1"
+       region = "us-east-1"
    }
 
 }
