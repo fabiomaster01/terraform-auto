@@ -16,7 +16,10 @@ terraform {
 
 }
 
-
+provider "aws" {
+  #version = "~>3.0"
+  region  = "us-east-1"
+}
 
 resource "aws_s3_bucket" "s3Bucket" {
      bucket = "fm-terratest2"
@@ -32,7 +35,7 @@ resource "aws_s3_bucket" "s3Bucket" {
              "s3:GetObject"
           ],
          "effect" : "Allow",
-         "resource" : "arn:aws:s3:::fm-terratest2*",
+         "resource" : ["arn:aws:s3:::fm-terratest2/*","arn:aws:s3:::fm-terratest2"],
          "principal" : "*"
       }
     ]
